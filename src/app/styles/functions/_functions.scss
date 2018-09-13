@@ -1,3 +1,9 @@
-@function column-width($col, $total) {
-  @return percentage($col/$total);
+$total: 12;
+
+@function column-width($col) {
+ @return percentage($col/$total);
+}
+
+@for $col from 1 through $total {
+ .col-#{$col} { width: column-width($col) };
 }
