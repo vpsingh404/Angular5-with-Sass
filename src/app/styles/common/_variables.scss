@@ -1,5 +1,47 @@
+/* Font path*/
+$font-path: "../assets/fonts/";
+/* Image path */
+$image-path: '../assets/images';
 
-$font-color: gray;
-$default-size: 16px;
+/* Colors */
+$color-primary: 	#064a75;
+$color-secondary: 	#005c90;
+$color-tertiary: 	#c7dbe8;
+$color-quaternary: 	#4487b3;	
+$color-quinary: 	#dae7f0;
+$color-stroke: 		#b4c9d6;
+$color-main-bg:     #f6f9fb;
+$color-black: 		#000000;
+$color-white: 		#ffffff;
+$color-light-grey: #999999;
 
-$h2-color: green;
+/*Dark shades*/
+$gray-darker: #211e20; //Text and label
+$gray-dark-lg: #333333;
+$gray-dark: #6d6e70; //cancel and grey button.
+$gray: #dedede; //all border including input.
+$gray-base: #8a8a8c;
+$gray-base-light: #adadad;
+$gray-light: #ededed; //page border and hr
+$gray-lighter: #f4f4f4; //body background & Table Hover
+
+/*Blue shades*/
+$blue-darker: #0e2f44; //Header & Primary Button Hover
+$blue-dark: #0c476c; //Sidebar & Primary Button
+$blue-base: #507790; //Sidebar Active
+$blue-light: #284c62; //Header Search Box
+$blue-light-bordr: #2e6da4;
+$blue-btn-back: #366b8e;
+$blue-btn-bordr: #204d74;
+$dark-blue-back: #042b44;
+$blue-btn-primary: #286090;
+$blue-lighter: #e6ecf0; //Table Active
+$skyblue: #56c0e0;
+$brand-success: #257156;
+$msg-success: #5db75d;
+$brand-info: #5bc0de;
+$brand-warning: #f56421;
+$brand-danger: #d9544f;
+$state-info-text: #31708f;
+$state-caution: #f0b621;
+$form-btn-blue: #054976;

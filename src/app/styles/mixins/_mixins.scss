@@ -1,0 +1,141 @@
+// Transform //
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -moz-transform: $property;
+    -ms-transform: $property;
+    -o-transform: $property;
+    transform: $property;
+}
+@mixin centered() {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: inherit;
+    margin: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+// Overlay //
+@mixin overlay() {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+// Border radius //
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+// Box shadow //
+@mixin box-shadow($shadows) {
+    -moz-box-shadow: $shadows;
+    -webkit-box-shadow: $shadows;
+    box-shadow: $shadows;
+}
+// Pseudo //
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+// padding //
+@mixin padding($top, $right, $bottom, $left) {
+    padding: $top $right $bottom $left;
+}
+@mixin padding-top($property) {
+    padding-top: $property;
+}
+@mixin padding-right($property) {
+    padding-right: $property;
+}
+@mixin padding-bottom($property) {
+    padding-bottom: $property;
+}
+@mixin padding-left($property) {
+    padding-left: $property;
+}
+// margin //
+ @mixin margin($top, $right, $bottom, $left) {
+    margin: $top $right $bottom $left;
+}
+@mixin margin-top($property) {
+    margin-top: $property;
+}
+@mixin margin-right($property) {
+    margin-right: $property;
+}
+@mixin margin-bottom($property) {
+    margin-bottom: $property;
+}
+@mixin margin-left($property) {
+    margin-left: $property;
+}
+// placeholder //
+@mixin placeholder {
+    &::-webkit-input-placeholder {@content}
+    &:-moz-placeholder           {@content}
+    &::-moz-placeholder          {@content}
+    &:-ms-input-placeholder      {@content}  
+}
+@mixin width($property) {
+    width: $property;
+}
+@mixin height($property) {
+    height: $property;
+}
+@mixin opacity($property) {
+    opacity: $property;
+}
+@mixin z-index($property) {
+    z-index: $property;
+}
+@mixin font-size($property) {
+    font-size: $property;
+}
+@mixin font-weight($property) {
+    font-weight: $property;
+}
+@mixin display($property) {
+    display: $property;
+}
+@mixin min-width($property) {
+    min-width: $property;
+}
+@mixin max-width($property) {
+    max-width: $property;
+}
+@mixin min-height($property) {
+    min-height: $property;
+}
+@mixin max-height($property) {
+    max-height: $property;
+}
+@mixin position($property) {
+    position: $property;
+}
+@mixin line-height($property) {
+    line-height: $property;
+}
+@mixin text-transform($property) {
+    text-transform: $property;
+}
+@mixin text-align($property) {
+    text-align: $property;
+}
+@mixin vertical-align($property) {
+    vertical-align: $property;
+}
+@mixin overflow($property) {
+    overflow: $property;
+}
+@mixin float($property) {
+    float: $property;
+}

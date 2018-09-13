@@ -1,0 +1,124 @@
+// Margin //
+%margin-auto {
+    margin: 0 auto;
+  }
+  // Flex //
+  %display-flex {
+    display: -webkit-flex;
+    -ms-flex: -webkit-flex;
+    display: flex;
+  }
+  %flex-1 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  %flex-auto {
+    flex: 1 1 auto;
+  }
+  %flex-grow {
+    flex-grow: 1;
+  }
+  %flex-none {
+    flex: 0 0 auto;  
+  }
+  %align-items-flex-start {
+    align-items: flex-start;
+  }
+  %align-items-flex-end {
+    align-items: flex-end;
+  }
+  %align-items-center {
+    align-items: center;
+  }
+  %align-items-baseline {
+    align-items: baseline;
+  }
+  %flex-direction-row {
+    flex-direction: row;
+  }
+  %flex-dir-column {
+    flex-direction: column;
+  }
+  %flex-dir-row-reverse {
+    flex-direction: row-reverse;
+  }
+  %flex-dir-col-reverse {
+    flex-direction: column-reverse;
+  }
+  %flex-wrap {
+    flex-wrap: wrap;
+  }
+  %flex-nowrap {
+    flex-wrap: nowrap;
+  }
+  %justify-cont-center {
+    justify-content: center;
+  }
+  %justify-cont-flex-start {
+    justify-content: flex-start;
+  }
+  %justify-cont-flex-end {
+    justify-content: flex-end;
+  }
+  // Text Decoration //
+  %text-dec-none {
+    text-decoration: none;
+  }
+  %text-dec-underline {
+    text-decoration: underline;
+  }
+  // Text Overflow //
+  %text-over-ellipsis {
+    text-overflow: ellipsis;
+  }
+  // List Style Type//
+  %list-style-type-none {
+    list-style-type: none;
+  }
+  // Visiblity //
+  %visibility-hidden {
+    visibility: hidden;
+  }
+  %visibility-visible {
+    visibility: visible;
+  }
+  // Cursor //
+  %cursor-pointer {
+    cursor: pointer;
+  }
+  %cursor-default {
+    cursor: default;
+  }
+  // White Space //
+  %white-space-normal {
+    white-space: normal;
+  }
+  %white-space-nowrap {
+    white-space: nowrap;
+  }
+  // Word Wrap/Break //
+  %word-wrap-br-word {
+    word-wrap: break-word;
+  }
+  %word-wrap-normal {
+    word-wrap: normal;
+  }
+  %word-break {
+    word-break: break-all;
+  }
+  // Clear //
+  %clear-both {
+    clear: both;
+  }
+  // Border //
+  %border-none {
+    border: none;
+  }
+  %border-0 {
+    border: 0;
+  }
+  // Box Sizing //
+  %box-sizing-border-box {
+    box-sizing: border-box;
+  }
