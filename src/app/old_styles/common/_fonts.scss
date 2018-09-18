@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Verdana, Arial, Helvetica, sans-serif";
+    src: url('#{$font-path}Verdana.eot?#iefix') format('embedded-opentype'),  
+         url('#{$font-path}Verdana.woff') format('woff'), 
+         url('#{$font-path}Verdana.ttf')  format('truetype'), 
+         url('#{$font-path}Verdana.svg#Verdana') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }  
+  @font-face {
+    font-family: "industry book";
+    src: url('#{$font-path}industry-book.otf')  format('opentype'),
+         url('#{$font-path}industry book.woff')  format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "industry bold";
+    src: url('#{$font-path}industry-bold.otf')  format('opentype'),
+         url('#{$font-path}industry bold.woff')  format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "industry light";
+    src: url('#{$font-path}industry-light.otf')  format('opentype'),
+         url('#{$font-path}industry light.woff')  format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "industry medium";
+    src: url('#{$font-path}industry-medium.otf')  format('opentype'),
+         url('#{$font-path}industry medium.woff')  format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }

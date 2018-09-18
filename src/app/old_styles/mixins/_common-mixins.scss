@@ -1,0 +1,115 @@
+@mixin display($property) {
+    display: $property;
+}
+// Transform //
+@mixin rotate($degrees) {
+    -webkit-transform: rotate($degrees);
+    -ms-transform: rotate($degrees); // IE9 only
+    -moz-transform: rotate($degrees);
+    -o-transform: rotate($degrees);
+    transform: rotate($degrees);
+}
+@mixin transition($transition...) {
+    -webkit-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+@mixin flex-box() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+// Transformations
+@mixin scale($ratio...) {
+    -webkit-transform: scale($ratio);
+    -ms-transform: scale($ratio); // IE9 only
+    -o-transform: scale($ratio);
+    transform: scale($ratio);
+}
+@mixin rotateTranslateZ($degrees, $value) {
+    -webkit-transform: rotate($degrees) translateZ($value);
+    -ms-transform: rotate($degrees) translateZ($value); // IE9 only
+    -o-transform: rotate($degrees) translateZ($value);
+    transform: rotate($degrees) translateZ($value);
+}
+
+@mixin animation($delay:36s){
+    -webkit-animation: imageAnimation $delay linear infinite 0s;
+    -moz-animation: imageAnimation $delay linear infinite 0s;
+    -o-animation: imageAnimation $delay linear infinite 0s;
+    -ms-animation: imageAnimation $delay linear infinite 0s;
+    animation: imageAnimation $delay linear infinite 0s;
+}
+@mixin animationDelay($delay:6s){
+    -webkit-animation-delay: $delay;
+    -moz-animation-delay: $delay;
+    -o-animation-delay: $delay;
+    -ms-animation-delay: $delay;
+    animation-delay: $delay;
+}
+@mixin centered() {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: inherit;
+    margin: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+// Overlay //
+@mixin overlay() {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+// Border radius //
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+// Box shadow //
+@mixin box-shadow($shadows) {
+    -moz-box-shadow: $shadows;
+    -webkit-box-shadow: $shadows;
+    -ms-box-shadow: $shadows;
+    box-shadow: $shadows;
+}
+// Pseudo //
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+// placeholder //
+@mixin placeholder {
+    &::-webkit-input-placeholder {@content}
+    &:-moz-placeholder           {@content}
+    &::-moz-placeholder          {@content}
+    &:-ms-input-placeholder      {@content}
+}
+// Opacity //
+@mixin opacity($property) {
+    opacity: $property;
+}
+@mixin z-index($property) {
+    z-index: $property;
+}
+@mixin position($property) {
+    position: $property;
+}
+@mixin overflow($property) {
+    overflow: $property;
+}
+@mixin float($property) {
+    float: $property;
+}

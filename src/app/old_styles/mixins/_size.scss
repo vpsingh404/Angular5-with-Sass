@@ -1,0 +1,18 @@
+@mixin width($property) {
+    width: $property;
+}
+@mixin min-width($property) {
+    min-width: $property;
+}
+@mixin max-width($property) {
+    max-width: $property;
+}
+@mixin height($property) {
+    height: $property;
+}
+@mixin min-height($property) {
+    min-height: $property;
+}
+@mixin max-height($property) {
+    max-height: $property;
+}

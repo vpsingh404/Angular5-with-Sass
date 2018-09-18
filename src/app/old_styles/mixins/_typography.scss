@@ -1,0 +1,19 @@
+// Text related //
+@mixin font-size($property) {
+    font-size: $property;
+}
+@mixin font-weight($property) {
+    font-weight: $property;
+}
+@mixin line-height($property) {
+    line-height: $property;
+}
+@mixin text-transform($property) {
+    text-transform: $property;
+}
+@mixin text-align($property) {
+    text-align: $property;
+}
+@mixin vertical-align($property) {
+    vertical-align: $property;
+}

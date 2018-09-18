@@ -1,0 +1,322 @@
+// /* Sorting */
+// .sorting {
+//     background: url("#{$image-path}/sort.svg") 95% 50% no-repeat !important;
+//     &.asc {
+//         background: url("#{$image-path}/sort-down.svg") 95% 50% no-repeat !important;
+//     }
+//     &.desc {
+//         background: url("#{$image-path}/sort-up.svg") 95% 50% no-repeat !important;
+//     }
+// }
+// /* Pagination */
+// .pagination-icon {
+//     background-image: url(#{$image-path}/pagination-sprite.svg);
+//     background-repeat: no-repeat;
+//     width: 20px;
+//     height: 20px;
+//     margin: 0 2px;
+//     display: inline-block;
+// }
+// .icon {
+//     &.icon-first {
+//         @extend .pagination-icon;
+//         @include icon-sprite(
+//         -57px,
+//         0px);
+//     }
+//     &.icon-prev {
+//         @extend .pagination-icon;
+//         @include icon-sprite(
+//         -86px,
+//         0px);
+//     }
+//     &.icon-last {
+//         @extend .pagination-icon;
+//         @include icon-sprite(
+//         -136px,
+//         0px);
+//     }
+//     &.icon-next {
+//         @extend .pagination-icon;
+//         @include icon-sprite(
+//         -108px,
+//         0px);
+//     }
+// }
+
+// .disabled {
+//     .icon {
+//         &.icon-first {
+//             @extend .pagination-icon;
+//             @include icon-sprite(0px,0px);
+//         }
+//         &.icon-prev {
+//             @extend .pagination-icon;
+//             @include icon-sprite(-30px,0px);
+//         }
+//         &.icon-last {
+//             @extend .pagination-icon;
+//             @include icon-sprite(-191px,0px);
+//         }
+//         &.icon-next {
+//             @extend .pagination-icon;
+//             @include icon-sprite(-163px,0px);
+//         }
+//     }
+//     a {
+//         pointer-events: none;
+//     }
+// }
+// /* Plus + close x */
+// .line-action {
+//     position: relative;
+//     display: inline-block;
+//     &:after,
+//     &:before {
+//         content: '';
+//         position: absolute;
+//         height: 2px;
+//         width: 100%;
+//         top: 50%;
+//         left: 0;
+//         margin-top: -1px;
+//     }
+//     &.delete {
+//         &:before {
+//             @include rotate(45deg);
+//         }
+//         &:after {
+//             @include rotate(-45deg);
+//         }
+//     }
+//     &.plus {
+//         &:after {
+//             @include rotateTranslateZ(90deg, 0);
+//         }
+//     }
+//     &.white {
+//         &:after,
+//         &:before {
+//             background-color: #ffffff;
+//         }
+//     }
+//     &.blue {
+//         &:after,
+//         &:before {
+//             background-color: $color-primary;
+//         }
+//     }
+//     &.black {
+//         &:after,
+//         &:before {
+//             background-color: $text-primary;
+//         }
+//     }
+//     &.small {
+//         width: 12px;
+//         height: 12px;
+//     }
+//     &.medium {
+//         width: 19px;
+//         height: 19px;
+//     }
+// }
+
+// .sidenav {
+//     .icon-nav {
+//         background-image: url(#{$image-path}/nav-icon-sprite.svg);
+//         background-repeat: no-repeat;
+//         width: 57px;
+//         height: 57px;
+//     }
+// }
+
+// .w-left-list {
+//     .icon-nav {
+//         background-image: url(#{$image-path}/nav-icon-sprite-flat.svg);
+//         background-repeat: no-repeat;
+//         width: 30px;
+//         height: 30px;
+//         background-size: 30px auto;
+//     }
+// }
+
+// .sprite12x12 {
+//     background-image: url(#{$image-path}/sprite-12x12.svg);
+//     background-repeat: no-repeat;
+//     width: 12px;
+//     height: 12px;
+// }
+
+// .sprite34x34 {
+//     background-image: url(#{$image-path}/sprite-34x34.svg);
+//     background-repeat: no-repeat;
+//     width: 34px;
+//     height: 34px;
+// }
+
+// .sprite-icon {
+//     background-image: url(#{$image-path}/sprite.svg);
+//     background-repeat: no-repeat;
+//     width: 20px;
+//     height: 20px;
+// }
+
+// .generic-icon {
+//     display: inline-block;
+//     background-repeat: no-repeat;
+//     &.size-big {
+//         @include bg-size(95px);
+//     }
+//     &.size-regular {
+//         @include bg-regular(21px);
+//     }
+//     &.edit {
+//         @extend .sprite12x12;
+//         @include icon-sprite(
+//         0px,
+//         -24px);
+//         width: 14px;
+//         &.white {
+//             @extend .sprite12x12;
+//             @include icon-sprite(
+//             -220px,
+//             0px);
+//         }
+//     }
+//     &.right-arrow {
+//         @extend .sprite12x12;
+//         @include icon-sprite(
+//         -66px, 1px);
+//     }
+//     &.left-arrow {
+//         @extend .sprite12x12;
+//         @include icon-sprite(
+//         -44px, 1px);
+//     }
+//     &.icon-info {
+//         @extend .sprite-icon;
+//         @include icon-sprite(
+//         -30px,
+//         -150px);
+//     }
+//     &.icon-info-wt {
+//         @extend .sprite-icon;
+//         @include icon-sprite(
+//         -60px,
+//         -150px);
+//     }
+//     &.icon-camera {
+//         @extend .sprite-icon;
+//         @include icon-sprite(
+//         -270px,
+//         -240px);
+//     }
+//     &.exclaim {
+//         @extend .sprite-icon;
+//         @include icon-sprite(
+//         -30px,
+//         -150px);
+//     }
+//     &.exclaim-wt {
+//         @extend .sprite-icon;
+//         @include icon-sprite(
+//         -120px,
+//         -90px);
+//     }    
+//     &.icon-delete {
+//         @extend .sprite12x12;
+//         @include icon-sprite(
+//         -242px,
+//         0px);
+//     }
+//     &.icon-user {
+//         @extend .sprite-icon;
+//         @include icon-sprite(
+//         -210px,
+//         -120px);
+//     }
+//     &.icon-user-red-sm {
+//         @extend .sprite12x12;
+//         @include icon-sprite(
+//         -44px,
+//         -24px);
+//     }
+//     &.icon-user-white-sm {
+//         @extend .sprite12x12;
+//         @include icon-sprite(
+//         -264px,
+//         -0px);
+//     }
+//     &.check-white-medium {
+//         @extend .sprite-icon;
+//         @include icon-sprite(
+//         -180px,
+//         -90px);
+//     }
+//     &.error-medium {
+//         @extend .sprite-icon;
+//         @include icon-sprite(
+//         -150px,
+//         -150px);
+//         cursor: pointer;
+//     }
+//     &.error-red {
+//         @extend .sprite-icon;
+//         @include icon-sprite(
+//         -90px,
+//         -150px);
+//     }
+//     &.grid-icon-active,
+//     &.icon-active,
+//     &.icon-employed {
+//         @extend .sprite-icon;
+//         @include icon-sprite(
+//         -150px,
+//         -90px);
+//     }
+//     &.grid-icon-inactive {
+//         @extend .sprite-icon;
+//         @include icon-sprite(
+//         0px,
+//         -120px);
+//     }
+//     &.grid-icon-pending {
+//         @extend .sprite-icon;
+//         @include icon-sprite(
+//         -120px,
+//         -150px);
+//     }
+//     &.column-split {
+//         @extend .sprite-icon;
+//         @include icon-sprite(
+//         -60px,
+//         -30px);
+//     }
+//     &.icon-warning {
+//         @extend .sprite-icon;
+//         @include icon-sprite(
+//         -120px,
+//         -90px);
+//     }
+//     &.icon-warning-red {
+//         @extend .sprite-icon;
+//         @include icon-sprite(
+//         -90px,
+//         -90px);
+//     }
+//     &.icon-error {
+//         @extend .sprite-icon;
+//         @include icon-sprite(
+//         -150px,
+//         -150px);
+//     }
+//     &.icon-ownership {
+//         @extend .sprite-icon;
+//         @include icon-sprite(
+//         -180px,
+//         -120px);
+//     }
+    
+
+// }

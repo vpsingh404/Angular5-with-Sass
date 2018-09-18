@@ -1,31 +1,26 @@
-// vaiables defines
-@import 'common/variables';
-
-// all custom mixins
-@import 'mixins/mixins';
-
-// all custom functins
-@import 'functions/functions';
-
-// grid related sass files
-@import 'grid/grid';
-
-// common sass files used throughout the application
-@import 'common/icons';
-@import 'common/widgets';
-@import 'common/left-nav';
-@import 'common/accordion';
-@import 'common/alert-msg';
-@import 'common/buttons';
-@import 'common/dropdown';
-@import 'common/footer';
-@import 'common/form';
-@import 'common/header';
-@import 'common/ie';
-@import 'common/normalize';
-@import 'common/pagination';
-@import 'common/popup';
-@import 'common/responsive';
-@import 'common/table';
-@import 'common/tabs';
-@import 'common/print';
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reset";
+@import "type";
+@import "icons";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "left-nav";
+@import "header";
+@import "breadcrumb";
+@import "pagination";
+@import "widgets";
+@import "alert";
+@import "progress";
+@import "media";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "utilities";
+@import "print";
